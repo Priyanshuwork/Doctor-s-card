@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/Beige">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor Detail"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        ></TextView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:requiresFadingEdge="vertical"
+        app:cardCornerRadius="7dp"
+        >
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="52dp">
+
+    <ImageView
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/t1"/>
+        <TextView
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dr.Shubhangi Sinha"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Daant wali"
+            android:textSize="25sp"
+            android:textColor="@color/khaki"
+            android:textAlignment="center"/>
+
+        <RatingBar
+            android:layout_margin="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myrating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:inIndicator="True"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:rating="4"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/brown"
+            android:orientation="horizontal"
+            android:weightSum="2.01">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timing"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:40Pm to 8:30Pm"
+            android:textSize="16dp"
+            android:textColor="@color/teal_200"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal">
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingTop="15dp"
+                android:paddingBottom="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fees"
+                    android:textColor="@color/khaki"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:layout_gravity="center_horizontal">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150/-"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/aqua">
+
+                </TextView>
+                </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Doctor"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/About"
+            android:textAlignment="center"
+            android:textSize="23dp"
+            android:textColor="@color/orange"
+            android:layout_gravity="center_horizontal">
+
+        </TextView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="16dp"
+            android:text="Book Appointment"
+            android:textColor="@color/gold"
+            android:background="@color/red"
+            android:textSize="20dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center">
+
+        </Button>
+
+
+
+
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
